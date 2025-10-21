@@ -65,7 +65,7 @@ uvx checkdoc memo.docx "\bconfidential\b"
 ```python
 from checkdoc import find_phrases_in_docx
 
-* Use raw strings (r"") to avoid escaping issues
+# Use raw strings (r"") to avoid escaping issues
 matches = find_phrases_in_docx("test.docx", [r"\bemail\b", r"\d{4}"])
 for line in matches:
     print(line)
